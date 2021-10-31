@@ -96,3 +96,23 @@ Add scripts commands to the `package.json` file:
   }
 }
 ```
+
+## 🎥 Testing
+
+Run the browser test:
+
+```bash
+  npm run cy:open
+```
+
+Or run the headless test to record the video:
+
+```bash
+  npm run cy:run
+```
+
+### Sign in Page Testing
+<img src="./signin.gif" alt="sign in page testing">
+
+### Articles Page Testing
+<img src="./articles.gif" alt="articles page testing">

@@ -1,0 +1,9 @@
+{
+  "user": {
+    "email": "batatinha123@mail.com",
+    "username": "Batatinha",
+    "bio": null,
+    "image": null,
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJhdGF0aW5oYTEyM0BtYWlsLmNvbSIsInVzZXJuYW1lIjoiQmF0YXRpbmhhIiwicGFzc3dvcmQiOiIkMmEkMTAkSlJnMEhyZTZpNEdWZDhCWEFoL05pLi9EcEtpZUtVZU1YYjVqWGZ3c1Z2eW83SE90Yms2MkMiLCJiaW8iOm51bGwsImltYWdlIjoiaHR0cHM6Ly9yZWFsd29ybGQtdGVtcC1hcGkuaGVyb2t1YXBwLmNvbS9pbWFnZXMvc21pbGV5LWN5cnVzLmpwZWciLCJpYXQiOjE2MzUxODY4NjIsImV4cCI6MTY0MDM3MDg2Mn0.tnSJKevBQYrnkcmy8BOa8pdd7uFdX-JFGU7xrlXQKkE"
+  }
+}
