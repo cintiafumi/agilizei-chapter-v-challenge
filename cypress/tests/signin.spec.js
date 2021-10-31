@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import signIn from '../support/pages/signIn'
+import signIn from '../support/pages/signin'
 
 describe('SignIn', () => {
   it('should not sign in with an empty email', () => {
