@@ -116,3 +116,28 @@ Or run the headless test to record the video:
 
 ### Articles Page Testing
 <img src="./articles.gif" alt="articles page testing">
+
+
+## ✅ Generate Reports
+
+```bash
+npm run cy:run && npm run report:merge && npm run report:mocha
+```
+
+Check the report at `mochawesome-report/index.html`:
+
+<img src="./screenshot.png" alt="report">
+
+To clean the report:
+
+```bash
+npm run report:clean
+```
+
+## 🚀 Github Actions and Github Pages
+
+- Add the Node.js project to the `.github/workflows/main.yml` file.
+- Install dependencies
+- Run the headless test
+- Generate the report
+- Deploy the report to Github Pages: https://cintiafumi.github.io/agilizei-chapter-v-challenge/
