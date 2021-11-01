@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-10-31T23:59:57.318Z",
+    "end": "2021-11-01T00:00:02.057Z",
+    "duration": 4739,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "22ce40f9-ed3b-459d-a06a-3eb4bd389ce7",
+      "title": "",
+      "fullFile": "cypress/tests/signin.spec.js",
+      "file": "cypress/tests/signin.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "dfbd0cf6-d985-41ab-b0f6-51c35e622f5f",
+          "title": "SignIn",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should not sign in with an empty email",
+              "fullTitle": "SignIn should not sign in with an empty email",
+              "timedOut": null,
+              "duration": 1773,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept({\n  method: 'POST',\n  path: '/api/users/login'\n}, {\n  statusCode: 500,\n  fixture: 'signin-empty-email-error'\n}).as('postLoginUserWithEmptyEmail');\n_signin.default.accessPage();\n_signin.default.submitForm();\ncy.contains('Sign in').should('be.visible');",
+              "err": {},
+              "uuid": "2cd4cd38-cd80-4e8d-a1e3-d57fc5b2bf64",
+              "parentUUID": "dfbd0cf6-d985-41ab-b0f6-51c35e622f5f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should not sign in with an empty password",
+              "fullTitle": "SignIn should not sign in with an empty password",
+              "timedOut": null,
+              "duration": 1295,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept({\n  method: 'POST',\n  path: '/api/users/login'\n}, {\n  statusCode: 500,\n  fixture: 'signin-empty-password-error'\n}).as('postLoginUserWithEmptyPassword');\n_signin.default.accessPage();\n_signin.default.fillEmail();\n_signin.default.submitForm();\ncy.contains('Sign in').should('be.visible');",
+              "err": {},
+              "uuid": "b3ac6776-804c-4210-93b1-ed2eeeea108d",
+              "parentUUID": "dfbd0cf6-d985-41ab-b0f6-51c35e622f5f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should sign in with email and password",
+              "fullTitle": "SignIn should sign in with email and password",
+              "timedOut": null,
+              "duration": 1549,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept({\n  method: 'POST',\n  path: '/api/users/login'\n}, {\n  statusCode: 200,\n  fixture: 'signin-success'\n}).as('postLoginUserWithEmailAndPassword');\n_signin.default.accessPage();\n_signin.default.fillEmail();\n_signin.default.fillPassword();\n_signin.default.submitForm();\n_signin.default.checkLoggedUser();",
+              "err": {},
+              "uuid": "38145ef0-d409-4178-ad88-dd4182ebe19a",
+              "parentUUID": "dfbd0cf6-d985-41ab-b0f6-51c35e622f5f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2cd4cd38-cd80-4e8d-a1e3-d57fc5b2bf64",
+            "b3ac6776-804c-4210-93b1-ed2eeeea108d",
+            "38145ef0-d409-4178-ad88-dd4182ebe19a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4617,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
