@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2021-10-31T23:59:57.318Z",
-    "end": "2021-11-01T00:00:02.057Z",
-    "duration": 4739,
+    "start": "2021-11-01T12:28:17.246Z",
+    "end": "2021-11-01T12:28:22.704Z",
+    "duration": 5458,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "22ce40f9-ed3b-459d-a06a-3eb4bd389ce7",
+      "uuid": "a4247a80-1be5-4b52-ada3-482f77907f0e",
       "title": "",
       "fullFile": "cypress/tests/signin.spec.js",
       "file": "cypress/tests/signin.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "dfbd0cf6-d985-41ab-b0f6-51c35e622f5f",
+          "uuid": "c6e63aab-6c8e-4a6f-a072-ee2051634feb",
           "title": "SignIn",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "should not sign in with an empty email",
               "fullTitle": "SignIn should not sign in with an empty email",
               "timedOut": null,
-              "duration": 1773,
+              "duration": 1953,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.intercept({\n  method: 'POST',\n  path: '/api/users/login'\n}, {\n  statusCode: 500,\n  fixture: 'signin-empty-email-error'\n}).as('postLoginUserWithEmptyEmail');\n_signin.default.accessPage();\n_signin.default.submitForm();\ncy.contains('Sign in').should('be.visible');",
               "err": {},
-              "uuid": "2cd4cd38-cd80-4e8d-a1e3-d57fc5b2bf64",
-              "parentUUID": "dfbd0cf6-d985-41ab-b0f6-51c35e622f5f",
+              "uuid": "a668cf05-8976-4c7b-ad36-ca4f0fe86710",
+              "parentUUID": "c6e63aab-6c8e-4a6f-a072-ee2051634feb",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "should not sign in with an empty password",
               "fullTitle": "SignIn should not sign in with an empty password",
               "timedOut": null,
-              "duration": 1295,
+              "duration": 1627,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "cy.intercept({\n  method: 'POST',\n  path: '/api/users/login'\n}, {\n  statusCode: 500,\n  fixture: 'signin-empty-password-error'\n}).as('postLoginUserWithEmptyPassword');\n_signin.default.accessPage();\n_signin.default.fillEmail();\n_signin.default.submitForm();\ncy.contains('Sign in').should('be.visible');",
               "err": {},
-              "uuid": "b3ac6776-804c-4210-93b1-ed2eeeea108d",
-              "parentUUID": "dfbd0cf6-d985-41ab-b0f6-51c35e622f5f",
+              "uuid": "5f755752-7337-40bd-ae68-a14f03d24050",
+              "parentUUID": "c6e63aab-6c8e-4a6f-a072-ee2051634feb",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "should sign in with email and password",
               "fullTitle": "SignIn should sign in with email and password",
               "timedOut": null,
-              "duration": 1549,
+              "duration": 1758,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -83,22 +83,22 @@
               "context": null,
               "code": "cy.intercept({\n  method: 'POST',\n  path: '/api/users/login'\n}, {\n  statusCode: 200,\n  fixture: 'signin-success'\n}).as('postLoginUserWithEmailAndPassword');\n_signin.default.accessPage();\n_signin.default.fillEmail();\n_signin.default.fillPassword();\n_signin.default.submitForm();\n_signin.default.checkLoggedUser();",
               "err": {},
-              "uuid": "38145ef0-d409-4178-ad88-dd4182ebe19a",
-              "parentUUID": "dfbd0cf6-d985-41ab-b0f6-51c35e622f5f",
+              "uuid": "1d507004-584f-4ae8-ac9d-f94de4336c31",
+              "parentUUID": "c6e63aab-6c8e-4a6f-a072-ee2051634feb",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "2cd4cd38-cd80-4e8d-a1e3-d57fc5b2bf64",
-            "b3ac6776-804c-4210-93b1-ed2eeeea108d",
-            "38145ef0-d409-4178-ad88-dd4182ebe19a"
+            "a668cf05-8976-4c7b-ad36-ca4f0fe86710",
+            "5f755752-7337-40bd-ae68-a14f03d24050",
+            "1d507004-584f-4ae8-ac9d-f94de4336c31"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 4617,
+          "duration": 5338,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
